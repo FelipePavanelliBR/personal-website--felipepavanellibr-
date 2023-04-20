@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+   background-color: lightsalmon;
+
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    color: rgb(45, 43, 43);
+    font-size: 30px;
+    padding: 2%;
+    font-family:monospace;
+    animation: 0.5s infinite alternate bouncy;
+
+}
+
+@keyframes bouncy {
+    0% {
+        margin-left: 40px;
+    } 
+    90% {
+        margin-left: 20px;
+    }
+    
+    100% {
+    margin-left: 0px;    }
+}
+
+h1:hover {
+    font-style: oblique;
+    /* box-shadow: 2px 2px 3px black; can be a cool effect*/
+
+}
+
+p {
+    margin-left: 20px;
+}
+
+h3 {
+   margin-left: 14px;
+   background-color: aquamarine;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    background-color:coral ;
+    box-shadow: 3px 3px 3px #d36a5f;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    /* font-size: 20; */
+}
+
+.navigation > a {   
+    font-size: 1.2rem;
+    color: rgb(41, 39, 39);
+    font-family:monospace;
+}
+img {
+    /* position: absolute; */
+    margin: 20px;
+    border-radius: 10%;
+    border-image-width: 10px;
+    border: 5px solid #27615e;
+}
+
+header nav a:hover {
+text-decoration: underline;    
+font-weight: bold;
+cursor: pointer;
+
+}
+
+.main-images{
+    display: flex;
+    justify-content: center;
+}
+
+
+.cover-section{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size:100% 100%;
+    background-image: url('images/fundo2.jpeg');
+}
+
+#nice-meeting-you{
+    height: 115vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size:100% 100%;
+    background-image: url('images/fundo1.jpeg');
+}
+
+#separation {
+    display: flex;
+    padding: 25px;
+
+    background-color: rgb(60, 127, 139);
+    box-shadow: 2px 2px 2px white;
+}
+
+
+/* #facts{ 
+    display: flex;
+    padding: 25px;
+
+    background-color: rgb(60, 127, 139);
+    box-shadow: 2px 2px 2px white; */
+
+
+
+p {
+    font-family: monospace;
+    background-color: #d36a5f;
+    font-size: 16px;
+    margin: 1px;
+}

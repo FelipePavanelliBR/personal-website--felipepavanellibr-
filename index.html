@@ -1,48 +1,88 @@
 <!DOCTYPE html>
 <html>
-<head><title>Felipe Pavanelli</title></head>
+<head>
+    <title>Felipe Pavanelli</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
     <header>
-        <nav>
+        <nav class="navigation"> 
             <a>About</a>
             <a>Contact</a>
             <a>Projects</a>
         </nav>
-            <h1>Hello! I'm Felipe</h1>
     </header>
 
-    <section>
-    <img src="felipe.jpg" height="550" width="400"/>
-    <img src="tree.jpg" height="550" width="400">
+    <section class="cover-section">
+        <div class="name">
+        <h1>Hello! I'm Felipe</h1>
+        </div>
+        <section class="main-images">
+        <img src="images/felipe.jpg" height="450" width="350"/>
+        <img src="images/tree.jpg" height="450" width="350">
+        </section>
     </section>
 
+    <div id="separation">
+        
+    </div>
 
-    <section>
+    <section id="nice-meeting-you">
+        <div class="name">
         <h1>Nice meeting you</h1>
+        </div>
+
+        <button onclick="scrollToImage()">click me to see a cute picture</button>
+
+
         <p>My name is Felipe Pavanelli. 
-            I am an international '26 from Brazil and 
-            I am very excited to have you in my personal website!
+        I am an international '26 from Brazil</p> <p>and 
+        I am very excited to have you in my personal website!
         </p>
-    <p>
-    Here you can find my latest coding projects, 
-    witten works, as well as pieces of artistic expression. Make yourself at home :)
-    </p>
-    <img src="brasil.jpeg" height="500" width="400">
-    <img src="funny.jpg" height="500" width="400">
-        </section>
+
+        <p>
+        Here you can find my latest coding projects, </p>
+        <p>witten works, as well as pieces of artistic expression. Make yourself at home :)
+        </p>
+        <section class="main-images">
+            <img src="images/brasil.jpeg" height="450" width="350">
+            <img src="images/funny.jpg" height="450" width="350">
+    </section>
+    
+    </section>
 
     <section>
-        <h1>Fun/Weird facts about me</h1>
+        <div id="facts">
+        <h1 id = fun-facts>Fun/Weird facts about me</h1>
+
+
+        <!-- grabbing element by id -->
+        <!-- <script>
+            document.getElementById("fun-facts").innerHTML = 'new thing';
+        </script> -->
+
+
         <p>It's been great meeting you! here are some things about me that you will either like or cringe at</p>
         <ul>
-            <li>I am very cheap and do not care about saving money</li>
             <li>I am definitely not made for Hanover weather, yet I choose to study here</li>
-            <li>I have never driven a horse</li>
+            <li>I have never ridden a horse</li>
             <li>I like cooking for my friends, especially baking</li>
         </ul>
-        <p>Here's some funny bread-related pictures</p>   
-        <img src="bread.jpg" height="500" width="400">
-        <img src="bread2.jpg" height="500" width="400">
+        <p>Here's some funny bread-related pictures</p>
+        <section class="main-images">
+
+            <!-- changing attributes in elements -->
+
+        <img id="new-pic" src="images/bread.jpg" height="500" width="400">
+
+        <!-- <script>
+            document.getElementById("new-pic").src ="images/bread2.jpg"
+        </script> -->
+
+
+        <img id = "breading" src="images/bread2.jpg" height="500" width="400">
+        </section>   
+        </div>
     </section>
 
     <section>
@@ -65,5 +105,6 @@
 
         </ul>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
